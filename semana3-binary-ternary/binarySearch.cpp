@@ -32,6 +32,7 @@ double f2(double x_0) {
 }
 int main() {
     cin >> target;
+    // Primer elemento mayor o igual al target
     ll ini = 1, fin = 100;
     while (ini < fin) { // O(LOG(N))
         ll med = (ini + fin) / 2;
@@ -46,7 +47,7 @@ int main() {
     } else {
         cout << "no existe respuesta" << endl;
     }
-
+    // Ultimo elemento menor o igual al target
     ll ini2 = 0, fin2 = 100;
     while (ini2 < fin2) { // O(LOG(N))
         ll med = (ini2 + fin2 + 1) / 2;
